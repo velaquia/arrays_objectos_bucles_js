@@ -17,6 +17,16 @@ Las "keys" o "claves" de cada objeto se deberán llamar:
  - estiloClase
 
 */
+function nuevoObjeto(titulo, descripcion, icono, estilo){
+    const nuevo = {
+        "titulo": titulo,
+        "descripcion": descripcion,
+        "icono": icono,
+        "estilo": estilo
+    };
+    return nuevo
+}
+
 
 // Tipo agua
 const titulo_agua = "Tipo Agua"
@@ -25,7 +35,8 @@ const icono_agua = "./images/water_type.png";
 const estiloClase_agua = "agua"
 
 // Alumno: Genere un objeto llamado "tipoAgua" con todos los datos del pokemon tipo agua
-
+const tipoAgua = nuevoObjeto(titulo_agua, descripcion_agua, icono_agua, estiloClase_agua);
+console.log(tipoAgua);
 
 // Tipo planta
 const titulo_planta = "Tipo Planta"
@@ -33,7 +44,9 @@ const descripcion_planta = "Los Pokémon de tipo planta suelen ser pacíficos y 
 const icono_planta = "./images/grass_type.png";
 const estiloClase_planta = "planta"
 
-// Alumno: Genere un objeto llamado "tipoPlanta" con todos los datos del pokemon tipo planta
+// Alumno: Genere un objeto llamado "tipoPlanta" con todos los datos del pokemon tipo
+const tipoPlanta = nuevoObjeto(titulo_planta, descripcion_planta, icono_planta, estiloClase_planta);
+console.log(tipoPlanta);
 
 // Tipo Electricidad
 const titulo_electrico = "Tipo Electricidad"
@@ -42,6 +55,8 @@ const icono_electrico = "./images/electric_type.png";
 const estiloClase_electrico = "electricidad"
 
 // Alumno: Genere un objeto llamado "tipoElectricidad" con todos los datos del pokemon tipo electricidad
+const tipoElectricidad = nuevoObjeto(titulo_electrico, descripcion_electrico, icono_electrico, estiloClase_electrico);
+console.log(tipoElectricidad);
 
 // Tipo normal
 const titulo_normal = "Tipo Normal"
@@ -50,6 +65,8 @@ const icono_normal = "./images/normal_type.png";
 const estiloClase_normal = "normal"
 
 // Alumno: Genere un objeto llamado "tipoNormal" con todos los datos del pokemon tipo normal
+const tipoNormal = nuevoObjeto(titulo_normal, descripcion_normal, icono_normal, estiloClase_normal);
+console.log(tipoNormal);
 
 // Tipo fuego
 const titulo_fuego = "Tipo Fuego"
@@ -59,5 +76,7 @@ const estiloClase_fuego = "normal"
 
 
 // Alumno: Genere un objeto llamado "tipoFuego" con todos los datos del pokemon tipo fuego
+const tipoFuego = nuevoObjeto(titulo_fuego, descripcion_fuego, icono_fuego, estiloClase_fuego);
+console.log(tipoFuego);
 
 
