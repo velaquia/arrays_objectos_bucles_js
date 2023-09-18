@@ -42,3 +42,32 @@ en "section".
 */
 
 /* Comienza a escribir su código aquí */
+let accumulator = ""
+for(const poke of data){
+
+  accumulator +=`
+  <article class="post">
+    <img
+    src= "${poke.thumbnail}"
+      alt="${poke.name}"
+      />
+      <p>
+        "${poke.name}"
+      </p>
+    </article>`
+};
+
+const section = document.querySelector("section");
+section.innerHTML = accumulator;
+
+const color = document.getElementsByClassName("post");
+
+for (const cambio of color) {
+  cambio.addEventListener("mouseover", function () {
+    cambio.classList.add("planta");
+  });
+
+  cambio.addEventListener("mouseout", function (){
+    cambio.classList.remove("planta");
+  });
+}
